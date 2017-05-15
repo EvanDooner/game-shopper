@@ -1,0 +1,38 @@
+.ejd-note {
+    background-color: rgba(255,255,255,.8);
+    border-radius: 5px, 5px, 5px, 5px;
+    opacity: 0;
+    padding: 8px;
+    position: fixed;
+    right: 16px;
+    top: 16px;
+}
+
+.ejd-note-show {
+    animation: fadeInFromNone 0.5s ease-out;
+    opacity: 1;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ejd-note-hide {
+    animation: fadeOutToNone 0.5s ease-out;
+}
+
+@keyframes fadeOutToNone {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

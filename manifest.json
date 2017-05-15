@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Game Shopper",
+    "version": "0.1.0",
+    "description": "A Chrome extension to make it easier to shop for games",
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "author": "Evan Dooner <evanjdooner@gmail.com>",
+    "content_scripts": [
+        {
+            "matches": ["https://www.gameslore.com/*"],
+            "css": ["content.css"],
+            "js": ["content.js"]
+        }
+    ]
+}
